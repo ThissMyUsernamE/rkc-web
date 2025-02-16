@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const carousel = document.getElementById('carousel');
+    const carousel = document.getElementById('events__carousel');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
-    const items = carousel.querySelectorAll('.carousel-item');
+    const items = carousel.querySelectorAll('.events__carousel-item');
     const itemWidth = items[0].offsetWidth + parseInt(window.getComputedStyle(items[0]).marginRight);
-    const containerWidth = document.querySelector('.carousel-container').offsetWidth;
+    const containerWidth = document.querySelector('.events__carousel-container').offsetWidth;
     let currentPosition = 0;
 
     function updateCarousel() {
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Recalculate on window resize
     window.addEventListener('resize', () => {
-        const newContainerWidth = document.querySelector('.carousel-container').offsetWidth;
+        const newContainerWidth = document.querySelector('.events__carousel-container').offsetWidth;
         if (newContainerWidth !== containerWidth) {
             currentPosition = 0;
             updateCarousel();
