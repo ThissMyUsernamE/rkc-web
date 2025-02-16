@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modern-normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./public/logo RKC(transparent).png" type="image/png">
+    <title>Test server</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__brand">
+            <img class="header__img" src="./public/logo RKC(transparent).png" alt="page-logo">
+            <h1 class="header__text">RKC Revúca</h1>
+        </div>
+        <ul class="header__main-navigation">
+            <li><a class="header__link" href="#">Home</a></li>
+            <li><a class="header__link" href="#">Aktuality</a></li>
+            <li><a class="header__link" href="#">Farnosť</a></li>
+            <li><a class="header__link" href="#">Kontakt</a></li>
+            <li><a class="header__link" href="#">Farské Oznamy</a></li>
+        </ul>
+    </header>
+    <body>
+        <section class="hero">
+            <h1 class="hero__title">Vitajte na stránke <strong>RKC Revúca</strong></h1>
+            <img class="hero__img" src="/public/IMG_6309.jpg" alt="Image showing the church and mountains in the background.">
+            <p class="hero__text">Sme radi, že ste tu. Prezrite si naše služby a objavte, čo všetko vám môžeme ponúknuť.</p>
+        </section>
+        <section class="farnost">
+            <div class="text-container">
+                <h2 class="farnost__title">Farnosť</h2>
+                <p class="farnost_text">
+                    Tu nájdete miesto pokoja a spoločenstva. Naša farská budova je srdcom mnohých aktivít a stretnutí. Prezrite si naše podujatia a pripojte sa k nám na ceste viery.
+                </p>
+            </div>
+            <img class="farnost__img image" src="/public/fara.png" alt="">
+        </section>
+        <section class="knazi">
+            <div class="text-container">
+                <h2 class="knazi__title">Naši kňazi</h2>
+                <p class="knazi__text">
+                    Naši kňazi sú srdcom našej farnosti.
+                    S láskou a oddanosťou slúžia komunite, sprevádzajú nás na ceste viery a prinášajú duchovnú oporu. Spoznajte ich príbehy a poslanie, ktoré napĺňajú s radosťou a pokorou.
+                </p>
+            </div>
+            <div class="knazi__carousel">
+                <div class="knazi__carousel-card">
+                    <img class="knazi__carousel-img" src="/public/knazi.png" alt="">
+                    <h3 class="knazi__carousel-name">Jozef Haľko</h3>
+                    <p class="knazi__carousel-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.</p>
+                </div>
+                <div class="knazi__carousel-card">
+                    <img class="knazi__carousel-img" src="/public/knazi.png" alt="">
+                    <h3 class="knazi__carousel-name">Martin Boháček</h3>
+                    <p class="knazi__carousel-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.</p>
+                </div>
+            </div>
+        </section>
+        <section class="events">
+            <div class="text-container">
+                <h2 class="events__title">Udalosti</h2>
+                <p class="events__text">
+                    Pozrite si naše nadchádzajúce udalosti a stretnutia.
+                    Radi vás privítame na našich podujatiach a spoločne sa podelíme o radosť a nádej, ktoré nám prináša spoločenstvo.
+                </p>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel" id="carousel">
+                    <div class="carousel-item">
+                        <img src="https://placehold.co/600x400/orange/white" alt="Item 1">
+                        <h3>Stretnutie Mladých</h3>
+                        <p>Každý piatok po večernej omši.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://placehold.co/600x400/orange/white" alt="Item 2">
+                        <h3>Biblické hodiny</h3>
+                        <p>Každý utorok o 18:00 na fare.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://placehold.co/600x400/orange/white" alt="Item 3">
+                        <h3>Upratovanie kostola</h3>
+                        <p>Piatok po svetej omši.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://placehold.co/600x400/orange/white" alt="Item 3">
+                        <h3>Upratovanie kostola</h3>
+                        <p>Piatok po svetej omši.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://placehold.co/600x400/orange/white" alt="Item 3">
+                        <h3>Upratovanie kostola</h3>
+                        <p>Piatok po svetej omši.</p>
+                    </div>
+                </div>
+                <button class="nav-button prev" id="prevBtn">&lt;</button>
+                <button class="nav-button next" id="nextBtn">&gt;</button>
+        </section>
+        <section class="money">
+            <div class="text-container">
+                <h2 class="money__title">Prispejte online</h2>
+                <p class="money__text">
+                    Podporte našu farnosť jednoducho a bezpečne online.
+                    Vaša štedrosť nám pomáha udržiavať farské aktivity, podporovať komunitu a zveľaďovať naše spoločné priestory. Ďakujeme za každý dar, ktorým prispievate k rozvoju našej farnosti.
+                    <br>
+                    Číslo účtu: 0000 0000 0000 0000
+                </p>
+            </div>
+            <img class="money__img image" src="/public/qr code placeholder.png" alt="">
+        </section>
+    </body>
+    <footer>
+        <p>&copy; 2025 RKC Revúca</p>
+    </footer>
+    <script src="./src/main.js"></script>
+</body>
+</html>
