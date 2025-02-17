@@ -106,7 +106,10 @@ li {
     color: var(--primary-clr);
     margin-left: 0.5em;
 }
-
+/* mobile nav */
+.mobile-nav {
+    display: none;
+}
 /* hero */
 .hero {
     flex-direction: column;

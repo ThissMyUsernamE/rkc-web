@@ -20,10 +20,22 @@
         <ul class="header__main-navigation">
             <li><a class="header__link" href="#">Home</a></li>
             <li><a class="header__link" href="#">Aktuality</a></li>
-            <li><a class="header__link" href="#">Farnosť</a></li>
-            <li><a class="header__link" href="#">Kontakt</a></li>
+            <li><a class="header__link" href="#farnost">Farnosť</a></li>
+            <li><a class="header__link" href="#contact">Kontakt</a></li>
             <li><a class="header__link" href="#">Farské Oznamy</a></li>
         </ul>
+        <!-- mobile nav -->
+        <div class="mobile-nav">
+            <ul class="mobile-nav__menu">
+                <li><a class="mobile-nav__link" href="#">Home</a></li>
+                <li><a class="mobile-nav__link" href="#">Aktuality</a></li>
+                <li><a class="mobile-nav__link" href="#">Farnosť</a></li>
+                <li><a class="mobile-nav__link" href="#">Kontakt</a></li>
+                <li><a class="mobile-nav__link" href="#">Farské Oznamy</a></li>
+                <li><a class="mobile-nav__line">|</a></li>
+            </ul>
+        </div>
+        <!--  -->
     </header>
     <body>
         <section class="hero">
@@ -31,7 +43,7 @@
             <img class="hero__img" src="./public/IMG_6309.jpg" alt="Image showing the church and mountains in the background.">
             <p class="hero__text">Sme radi, že ste tu. Prezrite si naše služby a objavte, čo všetko vám môžeme ponúknuť.</p>
         </section>
-        <section class="farnost">
+        <section id="farnost" class="farnost">
             <div class="text-container">
                 <h2 class="farnost__title">Farnosť</h2>
                 <p class="farnost__text">
@@ -99,6 +111,25 @@
                 </div>
                 <button class="events__nav-button prev" id="prevBtn">&lt;</button>
                 <button class="events__nav-button next" id="nextBtn">&gt;</button>
+        </section>
+        <section id="contact" class="contact">
+            <div class="text-container">
+                <h2 class="contact__title">Kontakt</h2>
+                <p class="contact__text">
+                    Máte otázky alebo návrhy? Neváhajte nás kontaktovať.
+                    Radi vám pomôžeme a poradíme. Tešíme sa na vašu správu.
+                </p>
+            </div>
+            <form class="contact__form" action="submit.php" method="post">
+                <label for="name">Meno:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Správa:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Odoslať</button>
+            </form>
+
         </section>
         <section class="money">
             <div class="text-container">
