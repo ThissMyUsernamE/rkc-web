@@ -331,9 +331,6 @@ footer p {
     gap: 1em;
 }
 
-.footer_title {
-    
-}
 .footer__text {
     font-size: var(--size-base);
     text-align: center;
