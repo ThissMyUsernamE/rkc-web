@@ -20,10 +20,22 @@
         <ul class="header__main-navigation">
             <li><a class="header__link" href="#">Home</a></li>
             <li><a class="header__link" href="#">Aktuality</a></li>
-            <li><a class="header__link" href="#">Farnosť</a></li>
-            <li><a class="header__link" href="#">Kontakt</a></li>
+            <li><a class="header__link" href="#farnost">Farnosť</a></li>
+            <li><a class="header__link" href="#contact">Kontakt</a></li>
             <li><a class="header__link" href="#">Farské Oznamy</a></li>
         </ul>
+        <!-- mobile nav -->
+        <div class="mobile-nav">
+            <ul class="mobile-nav__menu">
+                <li><a class="mobile-nav__link" href="#">Home</a></li>
+                <li><a class="mobile-nav__link" href="#">Aktuality</a></li>
+                <li><a class="mobile-nav__link" href="#">Farnosť</a></li>
+                <li><a class="mobile-nav__link" href="#">Kontakt</a></li>
+                <li><a class="mobile-nav__link" href="#">Farské Oznamy</a></li>
+                <li><a class="mobile-nav__line">|</a></li>
+            </ul>
+        </div>
+        <!--  -->
     </header>
     <body>
         <section class="hero">
@@ -31,7 +43,7 @@
             <img class="hero__img" src="./public/IMG_6309.jpg" alt="Image showing the church and mountains in the background.">
             <p class="hero__text">Sme radi, že ste tu. Prezrite si naše služby a objavte, čo všetko vám môžeme ponúknuť.</p>
         </section>
-        <section class="farnost">
+        <section id="farnost" class="farnost">
             <div class="text-container">
                 <h2 class="farnost__title">Farnosť</h2>
                 <p class="farnost__text">
@@ -100,6 +112,15 @@
                 <button class="events__nav-button prev" id="prevBtn">&lt;</button>
                 <button class="events__nav-button next" id="nextBtn">&gt;</button>
         </section>
+        <section id="contact" class="contact">
+            <div class="text-container">
+                <h2 class="contact__title">Kontakt</h2>
+                <p class="contact__text">
+                    Máte otázky alebo návrhy? Neváhajte nás kontaktovať.
+                    Radi vám pomôžeme a poradíme. Tešíme sa na vašu správu.
+                </p>
+            </div>
+        </section>
         <section class="money">
             <div class="text-container">
                 <h2 class="money__title">Prispejte online</h2>
@@ -114,6 +135,37 @@
         </section>
     </body>
     <footer>
+        <div class="footer__container">
+            <img src="./public/logo RKC(transparent).png" alt="">
+            <ul class="footer__logos-container">
+                <li class="footer__logos-item"><a href="https://burv.sk/" target="_blank"><img src="https://www.burv.sk/imgcache/e-img-14.png"/></a></li>
+                <li class="footer__logos-item"><a href="https://lumen.sk/" target="_blank"><img src="https://lumen.sk/public/img/logo/lumen.png"/></a></li>
+                <li class="footer__logos-item"><a href="https://www.tvlux.sk/" target="_blank"><img src="https://www.tvlux.sk/project/tvlux/design/img/logo-lux_80.svg"/></a></li>
+            </ul>
+            
+            <div class="footer__contact-container">
+                <div class="footer__contact">
+                    <h3 class="footer__title">Kontakt</h3>
+                    <p class="footer__text">
+                        Rímskokatolícka cirkev, farnosť Revúca <br>
+                        Štefana Maliaka 592/5 <br>
+                        050 01 Revúca <br>
+                        tel.: +421 905 944 234 <br>
+                        email:  revuca@burv.sk <br>
+                        IČO: 31974015 <br>
+                        DIČ: 2020734419 <br>
+                    </p>
+                </div>
+                <div class="footer__contact">
+                    <h3 class="footer__title">Sledujte nás</h3>
+                    <ul>
+                        <li>Youtube</li>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <p>&copy; 2025 RKC Revúca</p>
     </footer>
     <script src="./src/main.js"></script>
