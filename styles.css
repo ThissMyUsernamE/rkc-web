@@ -1,4 +1,12 @@
+/* Utils */
 :root {
+    --clr-dark: oklch(.05 0.004 49.25);
+    --clr-light: oklch(.968 .007 247.896);
+    --clr-slate400: oklch(.704 .04 256.788);
+    --clr-slate600: oklch(.446 .043 257.281);
+    --clr-slate800: oklch(.279 .041 260.031);
+    --clr-amber: oklch(.879 .169 91.605);
+    --clr-indigo: oklch(.511 0.262 276.96);
     --background-clr: rgb(32, 32, 32);
     --primary-clr: rgb(245, 245, 245);
     --secondary-clr: rgb(235, 232, 49);
@@ -15,20 +23,38 @@
 
 * {
     margin: 0;
-    padding: 0;
+    line-height: calc(1em + 0.5rem);
     /* border: solid red; */
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: Roboto;
-    background-color:var(--background-clr);
-    color: var(--primary-clr);
+    background-color:var(--clr-dark);
+    color: var(--clr-light);
     text-decoration: none;
     overflow-x: hidden;
 }
 
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+a {
+    color: var(--clr-amber);
+}
+
 strong {
-    color: var(--secondary-clr);
+    color: var(--clr-indigo);
 }
 
 section {
@@ -107,6 +133,71 @@ li {
     color: var(--primary-clr);
     margin-left: 0.5em;
 }
+
+/* Ensure the parent of the dropdown is relatively positioned */
+.header__main-navigation > li {
+    position: relative;
+  }
+  
+  /* Style for the dropdown */
+  .header__dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-width: 150px;
+    background-color: var(--clr-slate800);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* Remove background-color and box-shadow to keep your existing styling */
+  }
+  .header__dropdown li:hover {
+    color: var(--clr-amber);
+    background-color: var(--clr-slate600);
+  }
+  
+  /* Show dropdown on hover */
+  .header__main-navigation > li:hover .header__dropdown {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Style dropdown items */
+  .header__dropdown-item {
+    padding: 0.5em;
+  }
+  
+  .header__dropdown-item a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--primary-clr); /* Ensure the text color is set */
+    transition: opacity 0.3s ease;
+    /* Remove color to keep your existing text color */
+  }
+  
+  .header__dropdown-item a:hover {
+    /* Use a subtle effect for hover that works with dark backgrounds */
+    opacity: 0.8;
+  }
+  
+  /* Optional: Add a transition for smooth hover effect */
+  .header__dropdown-item a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--primary-clr); /* Ensure the text color is set */
+    transition: opacity 0.3s ease; /* Optional: Add a transition for smooth hover effect */
+  }
+
+  .header__dropdown-item a:hover {
+    opacity: 0.8; /* Use a subtle effect for hover that works with dark backgrounds */
+}
+  
 /* mobile nav */
 .mobile-nav {
     display: none;

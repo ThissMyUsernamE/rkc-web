@@ -20,8 +20,14 @@
         <ul class="header__main-navigation">
             <li><a class="header__link" href="#">Home</a></li>
             <li><a class="header__link" href="#">Aktuality</a></li>
-            <li><a class="header__link" href="#farnost">Farnosť</a></li>
-            <li><a class="header__link" href="#contact">Kontakt</a></li>
+            <li>
+                <a id="dropdown" class="header__link" href="#farnost">Farnosť</a>
+                <ul class="header__dropdown">
+                    <li class="header__dropdown-item"><a href="#knazi"></a>Naši kňazi</li>
+                    <li class="header__dropdown-item"><a href="#events"></a>Udalosti</li>
+                    <li class="header__dropdown-item"><a href="#contact">Kontakt</a></li>
+                </ul>
+            </li>
             <li><a class="header__link" href="#">Farské Oznamy</a></li>
         </ul>
         <!-- mobile nav -->
@@ -52,7 +58,7 @@
             </div>
             <img class="farnost__img" src="./public/fara.png" alt="">
         </section>
-        <section class="knazi">
+        <section id="knazi" class="knazi">
             <div class="text-container">
                 <h2 class="knazi__title">Naši kňazi</h2>
                 <p class="knazi__text">
@@ -73,7 +79,7 @@
                 </div>
             </div>
         </section>
-        <section class="events">
+        <section id="events" class="events">
             <div class="text-container">
                 <h2 class="events__title">Udalosti</h2>
                 <p class="events__text">
