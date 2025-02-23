@@ -7,9 +7,6 @@
     --clr-slate800: oklch(.279 .041 260.031);
     --clr-amber: oklch(.879 .169 91.605);
     --clr-indigo: oklch(.511 0.262 276.96);
-    --background-clr: rgb(32, 32, 32);
-    --primary-clr: rgb(245, 245, 245);
-    --secondary-clr: rgb(235, 232, 49);
     --size-xs: 0.75rem;
     --size-base: 1rem;
     --size-xl: 1.25rem;
@@ -120,17 +117,17 @@ li {
 
 .header__link {
     font-size: var(--size-xl);
-    color: var(--primary-clr);
+    color: var(--clr-light);
     text-decoration: none;
 }
 
 .header__link:hover {
-    color: var(--secondary-clr);
+    color: var(--clr-amber);
 }
 
 .header__link::after {
     content: '|';
-    color: var(--primary-clr);
+    color: var(--clr-light);
     margin-left: 0.5em;
 }
 
@@ -175,7 +172,7 @@ li {
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: var(--primary-clr); /* Ensure the text color is set */
+    color: var(--clr-light); /* Ensure the text color is set */
     transition: opacity 0.3s ease;
     /* Remove color to keep your existing text color */
   }
@@ -190,7 +187,7 @@ li {
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: var(--primary-clr); /* Ensure the text color is set */
+    color: var(--clr-light); /* Ensure the text color is set */
     transition: opacity 0.3s ease; /* Optional: Add a transition for smooth hover effect */
   }
 
@@ -288,7 +285,7 @@ li {
     margin-right: 1rem;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px var(--clr-slate400);
     background-color: #f0f0f0;
 }
 
@@ -349,8 +346,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--primary-clr);
-    background-color: rgb(63, 63, 63);
+    color: var(--clr-slate400);
+    background-color: var(--clr-slate800);
     gap: 1rem;
     margin-top: 1rem;
     width: 100%;
@@ -420,10 +417,36 @@ footer p {
     align-items: center;
     justify-content: center;
     gap: 1em;
+    text-align: center;
 }
 
 .footer__text {
     font-size: var(--size-base);
     text-align: center;
     text-decoration: none;
+}
+
+.footer__socials-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.footer__socials {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    text-align: center; 
+}
+
+.footer__socials-li a {
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    color: var(--clr-slate400);
 }
